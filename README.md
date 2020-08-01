@@ -12,7 +12,9 @@ Something I hope you know before go into the coding~
 
 
 * [day01_第1节_知名编程语言或系统的发展简史](Day01-15\(Go语言基础\)/day01_第1节_知名编程语言或系统的发展简史.md)
-* [day01_第2节_Go语言的前世今生](Day01-1\(Go语言基础\)/day01_第2节_Go语言的前世今生.md)
+* [day01_第2节_Go语言的前世今生](Day01-15\(Go语言基础\)/day01_第2节_Go语言的前世今生.md)
+* [day01_第3节_Go语言logo和版本](Day01-15\(Go语言基础\)/day01_第3节_Go语言logo和版本.md)
+* [day01_第4节_Go语言的核心特性](Day01-15\(Go语言基础\)/day01_第4节_Go语言的核心特性.md)
 
 
 
