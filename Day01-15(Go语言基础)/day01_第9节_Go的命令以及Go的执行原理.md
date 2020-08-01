@@ -19,7 +19,9 @@
 
 命令源码文件是 Go 程序的入口。
 
-同一个代码包中最好也不要放多个命令源码文件。多个命令源码文件虽然可以分开单独 go run 运行起来，但是无法通过 go build 和 go install。
+同一个代码包中最好也不要放多个命令源码文件。多个命令源码文件（**多个带main入口的源文件？不是的**）虽然可以分开单独 go run 运行起来，但是无法通过 go build 和 go install。
+
+![20200801_182833_10](image/20200801_182833_10.png)
 
 
 
@@ -63,7 +65,7 @@ Go Go Go !!!
 接下来执行 go build 和 go install ，看看会发生什么：
 
 ```shell
-localhost:hello ruby$ go build 
+localhost:hello ruby$ go build
 # hello
 ./helloworld2.go:3:6: main redeclared in this block
 	previous declaration at ./helloworld.go:3:6
@@ -71,7 +73,7 @@ localhost:hello ruby$ go install
 # hello
 ./helloworld2.go:3:6: main redeclared in this block
 	previous declaration at ./helloworld.go:3:6
-localhost:hello ruby$ 
+localhost:hello ruby$
 ```
 
 运行效果图：
@@ -123,7 +125,7 @@ func BenchmarkXXX( b *testing.B) {
 
 比如平时我们在 LeetCode 上刷算法题，这时候写的就是一个程序，这就是命令源码文件，可以在电脑的任意一个文件夹新建一个 go 文件就可以开始刷题了，写完就可以运行，对比执行结果，答案对了就可以提交代码。
 
-但是公司项目里面的代码就不能这样了，只能存放在 GOPATH 目录下。因为公司项目不可能只有命令源码文件的，肯定是包含库源码文件，甚至包含测试源码文件的。
+但是**公司项目里面的代码就不能这样了，只能存放在 GOPATH 目录下。因为公司项目不可能只有命令源码文件的，肯定是包含库源码文件，甚至包含测试源码文件的。**
 
 
 
@@ -165,7 +167,7 @@ func BenchmarkXXX( b *testing.B) {
 | -n    | 使命令仅打印其执行过程中用到的所有命令，而不去真正执行它们。如果不只想查看或者验证命令的执行过程，而不想改变任何东西，使用它正好合适。 |
 | -race | 用于检测并报告指定 Go 语言程序中存在的数据竞争问题。当用 Go 语言编写并发程序的时候，这是很重要的检测手段之一。 |
 | -v    | 用于打印命令执行过程中涉及的代码包。这一定包括我们指定的目标代码包，并且有时还会包括该代码包直接或间接依赖的那些代码包。这会让你知道哪些代码包被执行过了。 |
-| -work | 用于打印命令执行时生成和使用的临时工作目录的名字，且命令执行完成后不删除它。这个目录下的文件可能会对你有用，也可以从侧面了解命令的执行过程。如果不添加此标记，那么临时工作目录会在命令执行完毕前删除。 |
+| -work | 用于打印命令执行时生成和使用的临时工作目录的名字，且**命令执行完成后不删除它**。这个目录下的文件可能会对你有用，也可以从侧面了解命令的执行过程。如果不添加此标记，那么临时工作目录会在命令执行完毕前删除。 |
 | -x    | 使命令打印其执行过程中用到的所有命令，并同时执行它们。       |
 
 ### 1. go run
@@ -190,7 +192,7 @@ func main(){
 执行go run 配合-n：
 
 ```shell
-localhost:hello ruby$ go run -n mytest.go 
+localhost:hello ruby$ go run -n mytest.go
 
 #
 # command-line-arguments
@@ -212,7 +214,7 @@ mkdir -p $WORK/b001/exe/
 cd .
 /usr/local/go/pkg/tool/darwin_amd64/link -o $WORK/b001/exe/mytest -importcfg $WORK/b001/importcfg.link -s -w -buildmode=exe -buildid=vpgT856LhbZPXp6WeHib/ieg41NOobNF0eqq3xgnP/ieg41NOobNF0eqq3xgnP/vpgT856LhbZPXp6WeHib -extld=clang $WORK/b001/_pkg_.a
 $WORK/b001/exe/mytest
-localhost:hello ruby$ 
+localhost:hello ruby$
 
 ```
 
@@ -233,11 +235,11 @@ localhost:hello ruby$
 举个例子，生成的临时文件可以用`go run -work`看到，比如当前生成的临时文件夹是如下的路径：
 
 ```shell
-localhost:hello ruby$ go run -work mytest.go 
+localhost:hello ruby$ go run -work mytest.go
 WORK=/var/folders/kt/nlhsnpgn6lgd_q16f8j83sbh0000gn/T/go-build593750496
 HelloWorld
 你好，Go!!!
-localhost:hello ruby$ 
+localhost:hello ruby$
 ```
 
 我们进入：`/var/folders/kt/nlhsnpgn6lgd_q16f8j83sbh0000gn/T/go-build593750496`目录，可以看到如下目录结构：
@@ -251,7 +253,7 @@ localhost:hello ruby$
 go run 命令在第二次执行的时候，如果发现导入的代码包没有发生变化，那么 go run 不会再次编译这个导入的代码包。直接静态链接进来。
 
 ```shell
-localhost:hello ruby$ go run -n mytest.go 
+localhost:hello ruby$ go run -n mytest.go
 mkdir -p $WORK/b001/
 cat >$WORK/b001/importcfg.link << 'EOF' # internal
 packagefile command-line-arguments=/Users/ruby/Library/Caches/go-build/6b/6b9577027c8da20b0ae6da790267f558b3b71eea1feb44039fb933b35eaef6f9-d
@@ -262,7 +264,7 @@ mkdir -p $WORK/b001/exe/
 cd .
 /usr/local/go/pkg/tool/darwin_amd64/link -o $WORK/b001/exe/mytest -importcfg $WORK/b001/importcfg.link -s -w -buildmode=exe -buildid=goiqf_1cemqljgOYzSRA/ieg41NOobNF0eqq3xgnP/MVbHdxOky1BGK6Aq_4bM/goiqf_1cemqljgOYzSRA -extld=clang /Users/ruby/Library/Caches/go-build/6b/6b9577027c8da20b0ae6da790267f558b3b71eea1feb44039fb933b35eaef6f9-d
 $WORK/b001/exe/mytest
-localhost:hello ruby$ 
+localhost:hello ruby$
 
 ```
 
@@ -292,7 +294,7 @@ helloworld.go
 localhost:hello ruby$ go build
 localhost:hello ruby$ ls
 hello		helloworld.go
-localhost:hello ruby$ 
+localhost:hello ruby$
 ```
 
 
@@ -308,7 +310,7 @@ localhost:hello ruby$
 ```shell
 localhost:hello ruby$ go install
 go install hello: open /usr/local/go/bin/hello: permission denied
-localhost:hello ruby$ 
+localhost:hello ruby$
 ```
 
 
@@ -326,7 +328,7 @@ localhost:hello ruby$
 ```shell
 localhost:hello ruby$ sudo go install
 Password:
-localhost:hello ruby$ 
+localhost:hello ruby$
 
 ```
 
@@ -375,7 +377,7 @@ cd .
 /usr/local/go/pkg/tool/darwin_amd64/link -o $WORK/b001/exe/a.out -importcfg $WORK/b001/importcfg.link -buildmode=exe -buildid=diTh1q6kcbGRIX3aj3mU/PXDetO1R1NhLFMK5QGUc/PXDetO1R1NhLFMK5QGUc/diTh1q6kcbGRIX3aj3mU -extld=clang $WORK/b001/_pkg_.a
 /usr/local/go/pkg/tool/darwin_amd64/buildid -w $WORK/b001/exe/a.out # internal
 mv $WORK/b001/exe/a.out hello
-localhost:hello ruby$ 
+localhost:hello ruby$
 
 ```
 
@@ -444,7 +446,7 @@ cd .
 /usr/local/go/pkg/tool/darwin_amd64/buildid -w $WORK/b001/exe/a.out # internal
 mkdir -p /usr/local/go/bin/
 mv $WORK/b001/exe/a.out /usr/local/go/bin/hello
-localhost:hello ruby$ 
+localhost:hello ruby$
 
 ```
 
@@ -506,7 +508,7 @@ git show-ref
 cd /Users/ruby/go/src/github.com/go-errors/errors
 git submodule update --init --recursive
 WORK=/var/folders/kt/nlhsnpgn6lgd_q16f8j83sbh0000gn/T/go-build188558329
-localhost:hello ruby$ 
+localhost:hello ruby$
 ```
 
 效果图：
@@ -596,29 +598,16 @@ localhost:hello ruby$ godoc -http=:9527
 
 
 
-go fix 用来修复以前老版本的代码到新版本，例如go1之前老版本的代码转化到go1
-
-go version 查看go当前的版本
-
-go env 查看当前go的环境变量
-
-go list 列出当前全部安装的package
+* go fix 用来修复以前老版本的代码到新版本，例如go1之前老版本的代码转化到go1
+* go version 查看go当前的版本
+* go env 查看当前go的环境变量
+* go list 列出当前全部安装的package
 
 
+---
 
 本文部门文字和图片引自：https://www.jianshu.com/p/35a4ec1b3067
 
-
-
-
-
-
-
-
-
-
-
-千锋Go语言的学习群：784190273
 
 对应视频地址：
 
@@ -628,4 +617,4 @@ https://www.bilibili.com/video/av47467197
 
 源代码：
 
-https://github.com/rubyhan1314/go_foundation
+<https://github.com/rubyhan1314/go_foundation>

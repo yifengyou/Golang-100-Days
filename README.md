@@ -26,6 +26,9 @@ Something I hope you know before go into the coding~
 * [day01_第6节_Go语言能做什么](Day01-15\(Go语言基础\)/day01_第6节_Go语言能做什么.md)
 * [day01_第7节_Go语言环境搭建](Day01-15\(Go语言基础\)/day01_第7节_Go语言环境搭建.md)
 * [day01_第8节_第一个程序HelloWorld](Day01-15\(Go语言基础\)/day01_第8节_第一个程序HelloWorld.md)
+* [day01_第9节_Go的命令以及Go的执行原理](Day01-15\(Go语言基础\)/day01_第9节_Go的命令以及Go的执行原理.md)
+* [day01_第10节_安装Goland开发工具](Day01-15\(Go语言基础\)/day01_第10节_安装Goland开发工具.md)
+* [day01_第11节 _编码规范](Day01-15\(Go语言基础\)/day01_第11节 _编码规范.md)
 
 
 

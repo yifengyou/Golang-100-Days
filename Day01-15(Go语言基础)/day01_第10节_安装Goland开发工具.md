@@ -11,10 +11,7 @@
 
 IED：集成开发环境（integrated development environment）
 
-​	goland
-
-
-
+​
 ## 1.1 使用Goland
 
 Goland是JetBrains公司推出的Go语言IDE，是一款功能强大，使用便捷的产品。
@@ -23,61 +20,62 @@ Goland是JetBrains公司推出的Go语言IDE，是一款功能强大，使用便
 
 对于Mac和Windows，都有直接的安装文件，直接双击后，傻瓜式安装，一路next，直到完成。
 
+打开Goland工具，goland的激活码：<http://idea.iblue.me>
 
 
-打开Goland工具，goland的激活码：http://idea.iblue.me
-
-
-
-新建Go项目：
+### 新建Go项目：
 
 ![land1](img/land1.png)
 
 
-
-创建项目：
+### 创建项目：
 
 ![chuangjianxiangmu](img/chuangjianxiangmu.png)
 
+![20200801_185847_64](image/20200801_185847_64.png)
 
-
-Goland配置goroot：
+### Goland配置goroot：
 
 ![gopath1](img/gopath1.png)
 
 
-
-配置gopath：
+### 配置gopath：
 
 ![goland](img/goland.png)
 
+![20200801_185923_69](image/20200801_185923_69.png)
+
+![20200801_190358_91](image/20200801_190358_91.png)
 
 
 
+## Goland常用快捷键
 
-```
-Goland常用快捷键
 文件相关快捷键：
-
+```
 CTRL+E，打开最近浏览过的文件。
 CTRL+SHIFT+E，打开最近更改的文件。
 CTRL+N，可以快速打开struct结构体。
 CTRL+SHIFT+N，可以快速打开文件。
+```
 代码格式化：
-
+```
 CTRL+ALT+T，可以把代码包在一个块内，例如if{…}else{…}。
 CTRL+ALT+L，格式化代码。
 CTRL+空格，代码提示。
 CTRL+/，单行注释。CTRL+SHIFT+/，进行多行注释。
 CTRL+B，快速打开光标处的结构体或方法（跳转到定义处）。
 CTRL+“+/-”，可以将当前方法进行展开或折叠。
+```
 查找和定位
+```
 CTRL+R，替换文本。
 CTRL+F，查找文本。
 CTRL+SHIFT+F，进行全局查找。
 CTRL+G，快速定位到某行。
+```
 代码编辑
-
+```
 ALT+Q，可以看到当前方法的声明。
 CTRL+Backspace，按单词进行删除。
 SHIFT+ENTER，可以向下插入新行，即使光标在当前行的中间。
@@ -85,8 +83,6 @@ CTRL+X，删除当前光标所在行。
 CTRL+D，复制当前光标所在行。
 ALT+SHIFT+UP/DOWN，可以将光标所在行的代码上下移动。
 CTRL+SHIFT+U，可以将选中内容进行大小写转化。
-
-
 ```
 
 
@@ -107,7 +103,7 @@ ruby@ubuntu:/opt/GoLand-2017.3.3/bin$ sh goland.sh
 
 
 
-## 1.2 使用atom
+## 1.2 使用atom(速度慢了点，不过用着还行~)
 
 安装好atom工具，然后安装go-plus插件和atom-terminal-panel等插件。
 
@@ -144,8 +140,7 @@ ruby@ubuntu:/opt/GoLand-2017.3.3/bin$ sh goland.sh
 比如sublime text，editplus，notpad++，eclipse等等。。
 
 
-
-千锋Go语言的学习群：784190273
+---
 
 对应视频地址：
 
@@ -155,18 +150,4 @@ https://www.bilibili.com/video/av47467197
 
 源代码：
 
-https://github.com/rubyhan1314/go_foundation
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 
+<https://github.com/rubyhan1314/go_foundation>
