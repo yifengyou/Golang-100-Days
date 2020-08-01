@@ -17,6 +17,7 @@ Something I hope you know before go into the coding~
 
 ## 仓库目录
 
+> day01
 
 * [day01_第1节_知名编程语言或系统的发展简史](Day01-15\(Go语言基础\)/day01_第1节_知名编程语言或系统的发展简史.md)
 * [day01_第2节_Go语言的前世今生](Day01-15\(Go语言基础\)/day01_第2节_Go语言的前世今生.md)
@@ -28,9 +29,28 @@ Something I hope you know before go into the coding~
 * [day01_第8节_第一个程序HelloWorld](Day01-15\(Go语言基础\)/day01_第8节_第一个程序HelloWorld.md)
 * [day01_第9节_Go的命令以及Go的执行原理](Day01-15\(Go语言基础\)/day01_第9节_Go的命令以及Go的执行原理.md)
 * [day01_第10节_安装Goland开发工具](Day01-15\(Go语言基础\)/day01_第10节_安装Goland开发工具.md)
-* [day01_第11节 _编码规范](Day01-15\(Go语言基础\)/day01_第11节_编码规范.md)
+* [day01_第11节_编码规范](Day01-15\(Go语言基础\)/day01_第11节_编码规范.md)
+
+> day02
 
 
+* [day02_基本语法](Day01-15\(Go语言基础\)/day02_基本语法.md)
+
+> day03
+>
+> day04
+>
+> day05
+>
+> day06
+>
+> day07
+>
+> day08
+>
+> day09
+> 
+> day10
 
 
 ---
