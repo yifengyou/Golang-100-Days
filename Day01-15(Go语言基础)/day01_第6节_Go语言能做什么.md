@@ -55,7 +55,7 @@ Go发布之后，很多公司特别是云计算公司开始用Go重构他们的�
 
   代表项目：[以太坊](https://github.com/ethereum/go-ethereum)、[hyperledger](https://github.com/hyperledger)等。
 
-  
+
 
 >采用Go的一些国外公司，如Google、Docker、Apple、Cloud Foundry、CloudFlare、Couchbase、CoreOS、Dropbox、MongoDB、AWS等公司；
 >
@@ -217,7 +217,7 @@ Facebook也在用，为此他们还专门在Github上建立了一个开源组织
 
 
 
-###金山微看 
+###金山微看
 
 应用范围：服务接口，后台流程服务，消息系统，图片系统
 
@@ -229,7 +229,7 @@ Facebook也在用，为此他们还专门在Github上建立了一个开源组织
 
 
 
-### QOR - 模块化的电商系统 
+### QOR - 模块化的电商系统
 
 - QOR官网: [QOR: E-commerce & CMS SDK written in Go](https://link.zhihu.com/?target=http%3A//getqor.com)
 - github地址: qor/qor · GitHub
@@ -250,7 +250,7 @@ Facebook也在用，为此他们还专门在Github上建立了一个开源组织
 
 ### 快玩游戏
 
-- 网址：[快玩小游戏,单机游戏,网页游戏,快玩游戏,快玩游戏盒](快玩小游戏,单机游戏,网页游戏,快玩游戏,快玩游戏盒) 
+- 网址：[快玩小游戏,单机游戏,网页游戏,快玩游戏,快玩游戏盒](快玩小游戏,单机游戏,网页游戏,快玩游戏,快玩游戏盒)
 - 应用范围：实时消息系统、用户认证、用户会话、统一统计接口
 
 
@@ -435,9 +435,8 @@ Gor：网络流量抓包和重放工具
 
 Go的应用范围一直在扩大，云计算，微服务，区块链，哪里都有用Go写的重量级项目。docker/kubernetes生态圈，几百/千万行代码，基本统治了云原生应用市场。去年大热的区块链，以太坊的geth，比特币的btcd，闪电网络的lnd，都是Go语言开发。还是那句话，多看看各种语言的生态，或许都并没有你想象的那么不堪。。。Go语言设计上确实不够“先进”，但也是另一种“务实”。其实go不管在国内还是国外已经很受待见了，国外google用的很多，uber也在用，国内有著名的今日头条，每日千亿级的访问妥妥的。多少语言终其一生都没有这么大的应用场景。
 
+---
 
-
-千锋Go语言的学习群：784190273
 
 对应视频地址：
 
@@ -447,4 +446,4 @@ https://www.bilibili.com/video/av56018934/
 
 源代码：
 
-https://github.com/rubyhan1314/go_foundationhttps://www.bilibili.com/video/av47467197/?p=6
+<https://github.com/rubyhan1314/go_foundation>

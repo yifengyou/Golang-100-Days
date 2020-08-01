@@ -23,6 +23,9 @@ Something I hope you know before go into the coding~
 * [day01_第3节_Go语言logo和版本](Day01-15\(Go语言基础\)/day01_第3节_Go语言logo和版本.md)
 * [day01_第4节_Go语言的核心特性](Day01-15\(Go语言基础\)/day01_第4节_Go语言的核心特性.md)
 * [day01_第5节_Go语言的优势和其他语言的对比](Day01-15\(Go语言基础\)/day01_第5节_Go语言的优势和其他语言的对比.md)
+* [day01_第6节_Go语言能做什么](Day01-15\(Go语言基础\)/day01_第6节_Go语言能做什么.md)
+* [day01_第7节_Go语言环境搭建](Day01-15\(Go语言基础\)/day01_第7节_Go语言环境搭建.md)
+* [day01_第8节_第一个程序HelloWorld](Day01-15\(Go语言基础\)/day01_第8节_第一个程序HelloWorld.md)
 
 
 
@@ -531,11 +534,3 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 #### Day99 - [面试指导](./goon.md)
 
 #### Day100 - [英文面试](./goon.md)
-
-
-
-
-
-> 致谢：
->
-> ​	感谢的千锋教育以及千锋教育Go语言组的同事：Steven老师，Davie老师等在技术上给与的知道和帮助。# Golang-100-Days

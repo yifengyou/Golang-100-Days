@@ -10,7 +10,6 @@
 ![guanwang2](img/guanwang2.png)
 
 
-
 > 因为Google和中国的关系，直接登录Golang的官网，需要翻墙。
 
 
@@ -21,12 +20,9 @@
 
 ## 二、下载
 
-
-
 在Mac、Windows和Linux三个平台上都支持Golang。您可以从<https://golang.org/dl/>下载相应平台的安装包。
 
 ![xiazai1](img/xiazai1.png)
-
 
 
 该网站在国内不容易访问，所以可以访问中国对应的<https://golang.google.cn/dl/>或者是Go语言中文网
@@ -135,9 +131,9 @@ ruby@hanru:/usr/local$ ls
 
 
 
-**第二步：配置环境变量**	
+**第二步：配置环境变量**
 
-一：需要先安装vim。
+一：需要先安装vim(Ubuntu发行版默认没有vim，但是可以直接用vi)。
 
 直接在终端执行以下命令：
 
@@ -145,14 +141,13 @@ ruby@hanru:/usr/local$ ls
 ruby@ubuntu:~$ sudo apt-get install vim
 ```
 
-二：编辑$HOME/.profile文件
+二：编辑$HOME/.profile文件（也可以是~/.bashrc,/etc/profile）
 
 **A：先配置GOROOT，就是go的安装目录**
 
 ```shell
 export GOROOT="/usr/local/go"
 ```
-
 
 
 **B：然后配置GOPATH**
@@ -195,8 +190,13 @@ export GOBIN=$GOROOT/bin
 export PATH=$PATH:$GOBIN
 ```
 
+**为什么要配置环境变量？**
 
+shell终端直接输入命令，除了内建命令外其他命令都是通过PATH环境变量，依次查找的
 
+![20200801_175929_21](image/20200801_175929_21.png)
+
+为了能够不需要跳转到目标目录或者直接输入完成路径就能运行go程序，将go bin二进制目录放到PATH路径下，之后编译生成的可执行程序，直接输入程序名，就能在shell终端直接运行。
 
 
 > 当然，你也可以将GO的bin目录直接配置到PATH中：
@@ -204,7 +204,7 @@ export PATH=$PATH:$GOBIN
 > ```shell
 > export PATH=$GOROOT/bin:$PATH
 > ```
-> 
+>
 >相当于将上面的C和D步骤，写在一起
 
 
@@ -222,7 +222,7 @@ export PATH=$PATH:$GOBIN
 >
 > ​	:q!，强制退出不保存
 >
-> ​	:wq，保存并退出	
+> ​	:wq，保存并退出
 
 
 
@@ -297,7 +297,7 @@ Mac分为压缩版和安装版，他们都是64位的。压缩版和Linux的大�
 
 
 
-双击pkg包，顺着指引，即可安装成功。 
+双击pkg包，顺着指引，即可安装成功。
 
 
 
@@ -305,11 +305,11 @@ Mac分为压缩版和安装版，他们都是64位的。压缩版和Linux的大�
 
 **配置环境变量**
 
-1、打开终端输入cd ~进入用户主目录; 
-2、输入ls -all命令查看是否存在.bash_profile; 
-3、存在既使用vim .bash_profile 打开文件; 
-4、输入 i 进入vim编辑模式； 
-5、输入下面代码： 
+1、打开终端输入cd ~进入用户主目录;
+2、输入ls -all命令查看是否存在.bash_profile;
+3、存在既使用vim .bash_profile 打开文件;
+4、输入 i 进入vim编辑模式；
+5、输入下面代码：
 
 ```shell
 export GOROOT=/usr/local/go
@@ -322,7 +322,7 @@ export PATH=$PATH:$GOBIN
 
 6、点击ESC，并输入 :wq 保存并退出编辑。可输入vim .bash_profile 查看是否保存成功。
 
-7、输入source ~/.bash_profile 完成对golang环境变量的配置，配置成功没有提示。 
+7、输入source ~/.bash_profile 完成对golang环境变量的配置，配置成功没有提示。
 8、输入go env 查看配置结果。
 
 
@@ -355,11 +355,11 @@ export PATH=$PATH:$GOBIN
 
   > 需要把GOPATH中的可执行目录也配置到环境变量中, 否则你自行下载的第三方go工具就无法使用了
 
-  
+
 
   ![winhuanjing2](img/winhuanjing2.jpg)
 
-  
+
 
 > 1. 工作目录就是我们用来存放开发的源代码的地方，对应的也是Go里的GOPATH这个环境变量。这个环境变量指定之后，我们编译源代码等生成的文件都会放到这个目录下，GOPATH环境变量的配置参考上面的安装Go，配置到Windows下的系统变量里。
 > 2. GOPATH之下主要包含三个目录: bin、pkg、src。bin目录主要存放可执行文件; pkg目录存放编译好的库文件, 主要是*.a文件; src目录下主要存放go的源文件
@@ -378,10 +378,8 @@ go version  # 查看go的版本号
 ```
 
 
+---
 
-
-
-千锋Go语言的学习群：784190273
 
 对应视频地址：
 
@@ -391,4 +389,4 @@ https://www.bilibili.com/video/av47467197
 
 源代码：
 
-https://github.com/rubyhan1314/go_foundation
+<https://github.com/rubyhan1314/go_foundation>
