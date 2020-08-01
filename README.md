@@ -1,5 +1,7 @@
 ## Golang - 100天从新手到大师
 
+![20200801_173659_23](image/20200801_173659_23.png)
+
 **基于韩茹老师Golang 100天 fork仓库，新增/修改内容**
 
 ```
@@ -8,6 +10,11 @@ Something I hope you know before go into the coding~
 * Bug report, questions and discussion are welcome, you can post an issue or pull a request.
 ```
 
+## 相关链接
+
+* Golang官网 : <https://golang.google.cn/>
+* 千锋教育Go语言 基础+进阶+高级，全套200集 : <https://www.bilibili.com/video/bv1jJ411c7s3/>
+
 ## 仓库目录
 
 
@@ -15,6 +22,7 @@ Something I hope you know before go into the coding~
 * [day01_第2节_Go语言的前世今生](Day01-15\(Go语言基础\)/day01_第2节_Go语言的前世今生.md)
 * [day01_第3节_Go语言logo和版本](Day01-15\(Go语言基础\)/day01_第3节_Go语言logo和版本.md)
 * [day01_第4节_Go语言的核心特性](Day01-15\(Go语言基础\)/day01_第4节_Go语言的核心特性.md)
+* [day01_第5节_Go语言的优势和其他语言的对比](Day01-15\(Go语言基础\)/day01_第5节_Go语言的优势和其他语言的对比.md)
 
 
 
@@ -22,12 +30,6 @@ Something I hope you know before go into the coding~
 ---
 
 ## 原仓库内容
-
-
-
-
-
-**不好意思，移除各种捐赠二维码，巨纯免费free系**
 
 > 作者：韩茹，Davie，Steven
 >

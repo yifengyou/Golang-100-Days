@@ -19,18 +19,18 @@
 
 - 在开发效率和运行速度上达到平衡
 
-  
+
 
 go出现之前，无论汇编语言、还是动态脚本语言，在执行效率和开发效率上都不能兼备。
 
 > 执行效率 execution speed：  C/C++    >  Java   >  PHP
 > 开发效率 developing efficiency：  PHP   >  Java  >  C/C++
 
- 
+
 
 ## 二、 谷歌工程师的20%时间
 
-谷歌的“20%时间”工作方式，允许工程师拿出20%的时间来研究自己喜欢的项目。语音服务Google Now、谷歌新闻Google News、谷歌地图Google Map上的交通信息等，全都是20%时间的产物。
+**谷歌的“20%时间”工作方式，允许工程师拿出20%的时间来研究自己喜欢的项目**。语音服务Google Now、谷歌新闻Google News、谷歌地图Google Map上的交通信息等，全都是20%时间的产物。
 
 Go语言最开始也是20%时间的产物。
 
@@ -46,23 +46,14 @@ Go的三个作者分别是： Rob Pike（罗伯.派克），Ken Thompson（肯.�
 
 - Robert Griesemer：在开发Go之前是Google V8、Chubby和HotSpot JVM的主要贡献者。
 
-  
-
-
 
 ![aa](img/aa.jpg)
-
-
-
 
 
 > 此外还有Plan 9开发者Russ Cox、和曾改善目前广泛使用之开原码编译器GCC的Ian Taylor。
 
 
-
 ## 四、 Go的缔造与发展
-
-
 
 ### 4.1 Go的命名
 
@@ -70,7 +61,12 @@ Go的三个作者分别是： Rob Pike（罗伯.派克），Ken Thompson（肯.�
 
 
 
-这是一封由 Rob Pike 在 2007 年 9 月 25 号，星期二，下午 3：12 回复给 Robert Griesemer、Ken Thompson 的有关编程语言讨论主题的邮件，邮件正文大意为：在开车回家的路上我得到了些灵感。1.给这门编程语言取名为“go”，它很简短，易书写。工具类可以命名为：goc、 gol、goa。交互式的调试工具也可以直接命名为“go”。语言文件后缀名为 .go 等等
+这是一封由 Rob Pike 在 2007 年 9 月 25 号，星期二，下午 3：12 回复给 Robert Griesemer、Ken Thompson 的有关编程语言讨论主题的邮件，邮件正文大意为：在开车回家的路上我得到了些灵感。
+
+1. 给这门编程语言取名为“go”，它很简短，易书写。
+2. 工具类可以命名为：goc、 gol、goa。
+3. 交互式的调试工具也可以直接命名为“go”。
+4. 语言文件后缀名为 .go 等等
 
 
 
@@ -104,14 +100,11 @@ Ian Lance Taylor 的加入以及第二个编译器 (gcc go) 的实现 在带来�
 
 
 
-**第四个事情就是一家叫做 Docker 的公司。**就是使用 Go 进行项目开发，并促进了计算机领域的容器行业，进而出现了像 Kubernetes 这样的项目。现在，我们完全可以说 Go 是容器语言，这是另一个完全出乎意料的结果。
+**第四个事情就是一家叫做 Docker 的公司。**就是使用 Go 进行项目开发，并促进了计算机领域的容器行业，进而出现了像 Kubernetes（K8S） 这样的项目。现在，我们完全可以说 **Go 是容器语言**，这是另一个完全出乎意料的结果。
 
 
 
 ![1641730da1fe6861](img/1641730da1fe6861.jpg)
-
-
-
 
 
 除了大名鼎鼎的Docker，完全用GO实现。业界最为火爆的容器编排管理系统kubernetes完全用GO实现。之后的Docker Swarm，完全用GO实现。除此之外，还有各种有名的项目，如etcd/consul/flannel，七牛云存储等等
@@ -130,17 +123,11 @@ Go语言专门针对多处理器系统应用程序的编程进行了优化，使
 
 
 
-
+---
 
 本文所有图片来自网络，侵删
 
 
-
-
-
-
-
-千锋Go语言的学习群：784190273
 
 对应视频地址
 
@@ -150,4 +137,4 @@ https://www.bilibili.com/video/av56018934/
 
 源代码
 
-https://github.com/rubyhan1314/go_foundation
+<https://github.com/rubyhan1314/go_foundation>
